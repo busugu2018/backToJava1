@@ -9,12 +9,32 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub (write code here)
 		
-		String name = new String("Amigoscode");
-		System.out.println(name.toUpperCase());
+		int a = 10;
+		int b = a;
+		a = 100;
 		
-		LocalDate now = LocalDate.now();
-		System.out.println(now.getYear());
+		System.out.println("a = " + a + " - b = " + b);
 		
+		Person alex = new Person ("alex");
+		Person mariam = alex;
+		
+		System.out.println("Before changing alex");
+		System.out.println(alex.name + " " + mariam.name);
+		
+		alex.name = "alexander";
+		
+		System.out.println("After changing alex");
+		System.out.println(alex.name + " " + mariam.name);		
+		
+		System.out.println("No Worries");
 	}
+	
+	static class Person {
+		String name;
+		Person(String name){
+			this.name = name;
+	//Impo
+		}
+	} 
 
 }
