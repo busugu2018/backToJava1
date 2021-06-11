@@ -9,11 +9,28 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub (write code here)
 			
-		int zero = 0;
-		int one = 1;
-		double pi = 2.1415;
-		int subscribersCount = 1_000_000;
+		String name = new String("amigosCode");
+		System.out.println(name.toUpperCase());
+		System.out.println(name.toLowerCase());
+		System.out.println(name.charAt(1));
 		
+		String code = new String("Code");
+		System.out.println(name.contains(code));
+		
+		String code1 = new String("code");
+		System.out.println(name.contains(code1));	
+		
+		String code2 = new String("ami");
+		System.out.println(name.contains(code2));
+		
+		String pieceOfCode1 = new String("gosCo");
+		System.out.println(name.contains(pieceOfCode1));
+		
+		String code3 = new String("ami");
+		System.out.println(code1.contains(code3));	
+		
+		String code4 = new String("ami");
+		System.out.println(code1.contains(code3));		
 	} 
 
 }
