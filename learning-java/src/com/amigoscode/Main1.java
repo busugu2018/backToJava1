@@ -2,6 +2,7 @@ package com.amigoscode;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Arrays;
 import java.util.Date;
 import java.time.Month;
 import java.time.ZoneId;
@@ -111,8 +112,6 @@ public class Main1 {
 		
 		
 		
-
-		
 		
 		int bodyCount = 19;
 		
@@ -159,6 +158,171 @@ public class Main1 {
 			default:
 				System.out.println("Unknown gender.");
 		}
+		
+		
+		// Arrays
+		
+		int zero =  0;
+		int one = 1;
+		
+		int [] numbers = new int[3];
+		
+		boolean [] numbers1 = new boolean[3];
+		boolean [] numbers2 = new boolean[5];
+		System.out.println(Arrays.toString(numbers));
+		System.out.println(Arrays.toString(numbers1));
+		System.out.println(Arrays.toString(numbers2));
+		
+		numbers[0] = 0;
+		numbers[1] = 1;
+		numbers[2] = 1;
+		System.out.println(Arrays.toString(numbers));
+		
+		numbers[0] = 190;
+		numbers[1] = 0;
+		numbers[2] = -94495;
+		System.out.println(Arrays.toString(numbers));
+		
+		//other ways to write them
+		int [] numbers3 = {3,2,5,8};
+		int [] numbers4 = {9,5,66,787,23};
+		
+		System.out.println(Arrays.toString(numbers3));
+		System.out.println(Arrays.toString(numbers4));
+		System.out.println(numbers4.length);
+		
+		
+		
+		/// String Arrays
+		String [] name = new String[] {"Jo","Bill", "Hank"};
+		
+		//or
+		String [] name1 = {"John", "Vega", "Krys", "Doucie"};
+		
+		System.out.println(Arrays.toString(name));
+		System.out.println(name.length);
+		System.out.println(name[0]);
+		System.out.println(name[2]);
+		System.out.println(name[1].toUpperCase());
+		
+		System.out.println(Arrays.toString(name1));
+		System.out.println(name1.length);
+		System.out.println(name1[0]);
+		System.out.println(name1[3].toCharArray());
+		System.out.println(name1[2].toUpperCase());
+		
+		
+		//Arrays and Index
+		
+		int [] num = {19,8384,73,288,39};
+		int oneHundred = num[4];
+		int four = num[3];
+		System.out.println(oneHundred);
+		System.out.println(four);
+		
+		// LOOPS ++ AND --
+		
+		int [] num1 = {1,8,734,89,27439,762,74};
+		
+		int num2 = 0;
+		num2 = num2+1;
+		System.out.println(num2);
+		
+		int num3 = 18630;
+		num3 = num3+1;
+		System.out.println(num3); 
+		
+		int num4 = 0;
+		num4 = num4-1;
+		System.out.println(num4);
+		
+		int num5 = 0;
+		num5 = num5-5;
+		System.out.println(num5);
+		
+		int num6 = 1;
+		num6 = num6--;
+		System.out.println(num6);
+		
+		int num7 = 0;
+		num7 -= 1;
+		System.out.println(num7);
+		
+		int num8 = 0;
+		num8 -= 6;
+		System.out.println(num8);
+		
+		int num9 = 0;
+		num9 += 3;
+		System.out.println(num9);
+		
+		
+		//LOOP for ENHANCEMENT
+		
+		System.out.println("//price1 example below");
+		int [] price1 = {1,3,4,5};
+		for (int i=1; i<price1.length; i++) {
+			System.out.println(price1[i]);
+		}
+		
+		System.out.println("//price2 example below");
+		int [] price2 = {1,3,4,5};
+		for (int i=0; i<price2.length; i++) {
+			System.out.println(price2[i]);
+		}
+		
+		System.out.println("//price3 example below");
+		int [] price3 = {0,1,3,4,5,374,48,900,2,4,-98,-647,-2,2,67,934,-394,334};
+		for (int i=69; i<price3.length; i++) {
+			System.out.println(price3[i]);
+		}
+		System.out.println("//price3 example is empty because [i=69 is not less than price3 length which is 18]");
+		
+		System.out.println("//price4 example below");
+		int [] price4 = {0,1,3,4,5,374,48,900,2,4,-98,-647,-2,2,67,934,-394,334};
+		for (int i=7; i<price4.length; i++) {
+			System.out.println(price4[i]);
+		}
+		
+/*		System.out.println("//price5 example below");
+		int [] price5 = {0,1,3,4,5,374,48,900,2,4,-98,-647,-2,2,67,934,-394,334};
+		for (int i=69; i<70; i++) {
+			System.out.println(price5[i]);
+		}
+*/
+		
+		
+		System.out.println("//nameA example below");
+		String [] nameA = {"Joke", "Booba", "K9"};
+		for (String nameB : nameA) {
+			System.out.println(nameB);
+		}
+		
+		//Other ways of writing for loops
+		System.out.println("///Other ways of writing for loops");
+		int [] nombre = {27,023,84};
+		Arrays.stream(nombre).forEach(System.out::println);
+		Arrays.stream(nameA).forEach(System.out::println);
+		
+		
+		//Break and Continue
+		
+		String [] nameC = {"Jo","Gin","Guy"};
+		for (String nameD : nameC) {
+			System.out.println(nameD);
+			break;
+		}
+		System.out.println("/// [nameD : nameC] ");
+		for (String nameD : nameC) {
+			if (nameD.equals("Gin")) {
+				break;
+			}
+			System.out.println(nameD);
+		}
+		
+		
+		
+		
 		
 		
 		
